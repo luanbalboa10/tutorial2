@@ -1,30 +1,36 @@
-# Tutorial 2
+# Campeões da Libertadores
 
-Este repositório é um projeto de estudo para praticar Python e os principais
-recursos do Git e do GitHub.
+Projeto de estudo em Python que cria um gráfico de barras com os campeões da
+Copa Libertadores entre 2021 e 2025.
 
 ## Sobre o projeto
 
-O projeto contém exercícios iniciais em Python e serve como ambiente de
-aprendizagem para:
+![Campeões da Copa Libertadores entre 2021 e 2025](assets/campeoes-libertadores.png)
 
-- criar e organizar um repositório;
-- registrar alterações com commits;
-- publicar código no GitHub;
-- trabalhar com branches e Pull Requests.
+## Dados exibidos
+
+| Ano | Campeão |
+| --- | --- |
+| 2021 | Palmeiras |
+| 2022 | Flamengo |
+| 2023 | Fluminense |
+| 2024 | Botafogo |
+| 2025 | Flamengo |
 
 ## Pré-requisitos
 
 Para executar o projeto, você precisa ter instalado:
 
-- [Python 3](https://www.python.org/downloads/);
-- [Git](https://git-scm.com/downloads).
+- [Python 3](https://www.python.org/downloads/)
+- [Git](https://git-scm.com/downloads/)
+- [Matplotlib](https://matplotlib.org/)
 
 Você pode verificar as instalações no terminal:
 
 ```bash
 python --version
 git --version
+python -m pip --version
 ```
 
 ## Como executar
@@ -36,20 +42,32 @@ git clone https://github.com/luanbalboa10/tutorial2.git
 cd tutorial2
 ```
 
-2. Execute o arquivo principal:
+2. Crie um ambiente virtual e instale as dependências:
+
+```bash
+python -m venv .venv
+.venv\Scripts\activate
+python -m pip install -r requirements.txt
+```
+
+3. Execute o programa:
 
 ```bash
 python tutorial.py
 ```
 
-O arquivo `tutorial.py` está disponível para receber os exercícios do tutorial.
+O programa abre o gráfico em uma janela e cria a imagem em
+`assets/campeoes-libertadores.png`.
 
 ## Estrutura do projeto
 
 ```text
-tutorial2/
+campeoes-libertadores/
 ├── .gitignore
+├── assets/
+│   └── campeoes-libertadores.png
 ├── README.md
+├── requirements.txt
 └── tutorial.py
 ```
 
